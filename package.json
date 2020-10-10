@@ -1,0 +1,30 @@
+{
+  "name": "nmi-directpay-gwapi",
+  "version": "1.0.0",
+  "description": "NMI Directpay API for Node.js",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamingrainbow/NMI-DirectPay-GWAPI.git"
+  },
+  "keywords": [
+    "NMI",
+    "Payment",
+    "Gateway",
+    "Interface",
+    "Payment",
+    "Processing"
+  ],
+  "author": "Michael A. Dennis (michaeladennis@yahoo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dreamingrainbow/NMI-DirectPay-GWAPI/issues"
+  },
+  "homepage": "https://github.com/dreamingrainbow/NMI-DirectPay-GWAPI#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
