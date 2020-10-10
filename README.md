@@ -1,4 +1,6 @@
 # NMI-DirectPay-GWAPI #
+### Setup ###
+`npm i https://github.com/dreamingrainbow/NMI-DirectPay-GWAPI`
 
 ### Usage: ###
 
@@ -18,6 +20,7 @@ const gw = new gwapi((responses) => {
 ```JavaScript
 gw.setLogin("6457Thfj624V5r7WUwc5v6a68Zsd6YEm");
 ```
+
 #### Set the client billing information ####
 ```JavaScript
 gw.setBilling(
