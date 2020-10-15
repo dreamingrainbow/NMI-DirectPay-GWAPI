@@ -60,7 +60,66 @@ gw.setShipping(
 ```JavaScript
 gw.setOrder("1234", "Big Order", 1, 2, "PO1234", "65.192.14.10");
 ```
+#### Set the Transaction Payment Method for credit card payments.  ####
+```JavaScript
+gw.setPaymentMethod({
+  payment: "creditcard",
+  ccnumber : "4111111111111111",
+  ccexp : "1010",
+  cvv : "",
+});
+    
+```
+
+#### Set the Transaction Payment Method for check payments.  ####
+```JavaScript
+gw.setPaymentMethod({
+  payment: "check",
+  checkname: "Example User",
+  checkaba: 123123123,
+  checkaccount: 123123123,
+  account_holder_type: "personal",
+  account_type: "checking",
+}); 
+```
+
 #### Process the sale ####
 ```JavaScript
-gw.doSale("50.00", "4111111111111111", "1010");
+gw.doSale({amount:"50.00"});
+```
+
+Using the payment method creditcard the callback should be :
+
+```JavaScript
+{
+  response: '1',
+  responsetext: 'SUCCESS',
+  authcode: '123456',
+  transactionid: '5716156064',
+  avsresponse: 'N',
+  cvvresponse: '',
+  orderid: '',
+  type: 'sale',
+  response_code: '100',
+  cc_number: '4xxxxxxxxxxx1111',
+  customer_vault_id: ''
+}
+```
+
+Using the payment method check the callback should be :
+
+```JavaScript
+{
+  response: '1',
+  responsetext: 'SUCCESS',
+  authcode: '123456',
+  transactionid: '5716156061',
+  avsresponse: '',
+  cvvresponse: '',
+  orderid: '',
+  type: 'sale',
+  response_code: '100',
+  cc_number: '',
+  customer_vault_id: ''
+}
 ```
