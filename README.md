@@ -88,7 +88,7 @@ gw.setPaymentMethod({
 gw.doSale({amount:"50.00"});
 ```
 
-Using the payment method creditcard the callback should be :
+Using the payment method `creditcard` the callback should be :
 
 ```JavaScript
 {
@@ -106,7 +106,7 @@ Using the payment method creditcard the callback should be :
 }
 ```
 
-Using the payment method check the callback should be :
+Using the payment method `check` the callback should be :
 
 ```JavaScript
 {
